@@ -136,11 +136,11 @@
             "INTERES COMPUESTO GENERAL",
             "CAPITALIZACION COMPUESTA",
             "VALOR ACTUAL A INTERES COMPUESTO",
-            "TASA DEL PERIODO DE CAPITALIZACION 1",
-            "TASA DEL PERIODO DE CAPITALIZACION 2"});
+            "TASA DEL PERIODO DE CAPITALIZACION ",
+            "CALCULO DE LA DURACION DE LA OPERACION FINANCIERA"});
             this.comboBox_opf.Location = new System.Drawing.Point(185, 27);
             this.comboBox_opf.Name = "comboBox_opf";
-            this.comboBox_opf.Size = new System.Drawing.Size(255, 21);
+            this.comboBox_opf.Size = new System.Drawing.Size(320, 21);
             this.comboBox_opf.TabIndex = 15;
             this.comboBox_opf.SelectedIndexChanged += new System.EventHandler(this.comboBox_opf_SelectedIndexChanged);
             // 

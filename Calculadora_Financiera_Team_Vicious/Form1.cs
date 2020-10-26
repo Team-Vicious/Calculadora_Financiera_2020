@@ -208,13 +208,13 @@ namespace Calculadora_Financiera_Team_Vicious
                     break;
 
                 case "VALOR ACTUAL A INTERES COMPUESTO":
-                    textBox_FORMULA.Text = "VA = VF * (1+i)^n";
+                    textBox_FORMULA.Text = "VA = VF / (1+i)^n";
                     break;
 
-                case "TASA DEL PERIODO DE CAPITALIZACION 1":
+                case "TASA DEL PERIODO DE CAPITALIZACION ":
                     textBox_FORMULA.Text = "i = n^√(VF/VA) - 1";
                     break;
-                case "TASA DEL PERIODO DE CAPITALIZACION 2":
+                case "CALCULO DE LA DURACION DE LA OPERACION FINANCIERA":
                     textBox_FORMULA.Text = "n = (log(VF/VA))/ log(1+i) ";
                     
                     break;
@@ -253,7 +253,8 @@ namespace Calculadora_Financiera_Team_Vicious
 
                     if (val2 != 0 && val3 != 0)
                     {
-                        result = val1 / val2 * val3;
+                        result = (val1 / val2) * val3;
+                        textBox_RESULTADO.Text = result.ToString();
                     }
                     else
                     {
@@ -271,6 +272,7 @@ namespace Calculadora_Financiera_Team_Vicious
                     if (val2 != 0 && val3 != 0)
                     {
                         result = ((val1 / val2) - 1)/val3 ;
+                        textBox_RESULTADO.Text = result.ToString();
                     }
                     else
                     {
@@ -288,6 +290,7 @@ namespace Calculadora_Financiera_Team_Vicious
                     if (val2 != 0 && val3 != 0)
                     {
                         result = val1 / val2 * val3;
+                        textBox_RESULTADO.Text = result.ToString();
                     }
                     else
                     {
@@ -305,6 +308,7 @@ namespace Calculadora_Financiera_Team_Vicious
                     if (val2 != 0 && val3 != 0)
                     {
                         result = ((val1 / val2) - 1 ) / val3;
+                        textBox_RESULTADO.Text = result.ToString();
                     }
                     else
                     {
@@ -355,7 +359,7 @@ namespace Calculadora_Financiera_Team_Vicious
                     
                     break;
                 
-                case "TASA DEL PERIODO DE CAPITALIZACION 1":
+                case "TASA DEL PERIODO DE CAPITALIZACION ":
 
                     if(val2 != 0 && val3 != 0)
                     {
@@ -375,7 +379,7 @@ namespace Calculadora_Financiera_Team_Vicious
                     
                     
                     break;
-                case "TASA DEL PERIODO DE CAPITALIZACION 2":
+                case "CALCULO DE LA DURACION DE LA OPERACION FINANCIERA":
 
                     if (val1 < 0 || val3 < 0)
                     {
