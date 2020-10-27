@@ -226,6 +226,10 @@ namespace Calculadora_Financiera_Team_Vicious
         //BOTON QUE PERMITE REALIZAR LAS DIFERENTES OPERACIONES
         private void butt_OP_Click(object sender, EventArgs e)
         {
+            if(text_val1opf.Text.Equals("")|| text_val2opf.Text.Equals("") || text_val3opf.Text.Equals("")){
+                MessageBox.Show("no ha ingresado todos los valores!!", "CUIDADO¡¡¡",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                return;
+            }
             string op = comboBox_opf.Text;
 
             double val1 = Convert.ToDouble(text_val1opf.Text);
